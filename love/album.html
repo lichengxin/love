@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>我爱你，浪漫首页</title>
+		<meta name="keywords" content="我爱你，浪漫首页" />
+		<meta name="description" content="我爱你，浪漫首页" />
+		<link href="style/indexstyle.css" rel="stylesheet" type="text/css" media="screen" />
+
+		<link type="text/css" rel="stylesheet" href="style/zzsc.css" />
+
+		<style type="text/css">
+			a,
+			img {
+				border: 0;
+			}
+			/* slider */
+			
+			#slider {
+				width: 835px;
+				height: 334px;
+				margin: 0 auto;
+			}
+			
+			#slider img {
+				display: block;
+			}
+			
+			#slider-mask {
+				background: url(images/slider.png) no-repeat;
+				width: 1043px;
+				height: 374px;
+				margin: 40px auto 0 auto;
+				padding-top: 43px;
+				position: relative;
+				margin-left: -70px;
+			}
+			
+			#slider-mask #prev {
+				position: absolute;
+				top: 165px;
+				left: 60px;
+				cursor: pointer;
+				z-index: 99
+			}
+			
+			#slider-mask #next {
+				position: absolute;
+				top: 165px;
+				right: 60px;
+				cursor: pointer;
+				z-index: 99
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">a happy Birthday Present to yao</a></h1>
+				<h2>宝贝儿，么么哒！</h2>
+			</div>
+			<div id="menu">
+				<ul>
+					<li>
+						<a href="index.html" title="爱的首页">love首页</a>
+					</li>
+					<li>
+						<a href="diary.html" title="我们之间的甜言蜜语">love蜜语</a>
+					</li>
+					<li class="tu">
+						<a href="album.html" title="爱的相册">love相册</a>
+					</li>
+					<li>
+						<a href="love.html" title="爱的表白">love表白</a>
+					</li>
+					<li>
+						<a href="animate.html" title="提前祝宝贝儿生日快乐">love我们</a>
+					</li>
+					<li>
+						<a href="blessing.html" title="大家快来给我们一点点祝福吧">love祝福</a>
+					</li>
+
+				</ul>
+				<!--<div id="search">
+			<form method="get" action="">
+				<fieldset>
+				<input id="s" type="text" name="s" value="" />
+				<input id="x" type="submit" value="GO" />
+				</fieldset>
+			</form>
+		</div>-->
+			</div>
+		</div>
+
+		<hr />
+		<!-- start page -->
+		<div id="page">
+
+			<div id="slider-mask">
+				<div id="slider">
+
+					<div><img src="images/album.jpg" alt="Feminine Website Design" /></div>
+					<div><img src="images/album2.jpg" alt="Feminine Website Design" /></div>
+					<div><img src="images/album3.jpg" alt="Feminine Website Design" /></div>
+					<div><img src="images/album4.jpg" alt="Feminine Website Design" /></div>
+
+					<div><img src="images/anim-1.jpg" alt="Feminine Website Design" /></div>
+					<div><img src="images/anim-2.jpg" alt="Alluring Website Design" /></div>
+					<div><img src="images/anim-3.jpg" alt="Feminine Website Design" /></div>
+					<div><img src="images/anim-4.jpg" alt="Alluring Website Design" /></div>
+				</div>
+				<img src="images/prev.png" alt="" id="prev" />
+				<img src="images/next.png" alt="" id="next" />
+			</div>
+
+			<script type="text/javascript" src="script/jquery.min.js"></script>
+			<script type="text/javascript" src="script/jquery.cycle.all.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#slider').cycle({
+						prev: '#prev',
+						next: '#next',
+						timeout: 3500
+					});
+				});
+			</script>
+			<div style="width: 100%;height: 800px;>
+				
+				
+			</div>
+		</div>
+
+		<!-- end page -->
+		<div id="footer">
+	<p class="legal">copy from github </p>
+	<p class="credit">Designed by <a href="inde.html">	新</a></p>
+</div>
+	</body>
+
+</html>
